@@ -1,0 +1,22 @@
+Serial settings
+
+The settings of the serial port must be 9600 Baud, no parity, 1 stop bit and no flow-control.
+ 
+Initialization
+
+The device is powered up by setting RTS and DTR high on the host. 
+After a few milliseconds the microcontroller is up and running.
+During powerup the output pins of the microcontroller are not yet stable. 
+This gives some garbage on the RXD line of the host. 
+So clear the input fifo on the host, a few milliseconds after setting RTS and DTR high. 
+Next the host must send a character 'I' and a character 'R' with at least a 500 microsecond delay in between. 
+The microntroller responds with sending the characters 'O' and 'K'. 
+Now the initialization is done and the microcontroller will start sending decoded infrared-trains to the host from this point on.
+
+
+Receiving Remote Keypresses
+
+Once the device is initialized, the microcontroller sends 6 bytes to the host,
+every time a decodable infrared pulsetrain comes in from the infrared receiver. 
+These 6 bytes are pseudorandom, but constant for every specific key on a remote.
+If more information is needed, please let me know.

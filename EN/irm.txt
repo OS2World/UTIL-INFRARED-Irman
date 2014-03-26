@@ -1,0 +1,40 @@
+; Message file for IRMAND
+; This file contains all messages from the IRMAND program
+; Copyright 2002 D.J. van Enckevort
+; This program is licensed under GPL, see the file COPYING for details
+IRM
+IRM0001I: Irman Daemon %1
+IRM0002I: Copyright 2002 D.J. van Enckevort
+IRM0003I: This program is licensed under GPL, see the file COPYING for details
+IRM0004I: Press Ctrl-C or Ctrl-Break to quit
+IRM0005I: Usage: irmand n
+IRM0006I: n=comport number (1-9) (OPTIONAL)
+IRM0007I: Trying serial port %1
+IRM0008I: No Irman found on serial port %1
+IRM0009I: No response from Irman
+IRM0010I: Irman found on serial port %1
+IRM0011I: Serial port %1 not present or currently in use?
+IRM0012I: The program terminated normally
+IRM0013I: The program terminated because of an error
+IRM0014I: Unhandled event %1
+IRM0015I: Started program %1
+IRM0016?: 
+IRM0017?: 
+IRM0018?: 
+IRM0019?: 
+IRM0020?: 
+IRM0021I: Only one instance can run at the same time
+IRM0022E: Internal error: Failed to create semaphore
+IRM0023E: Internal error: Failed to register REXX functions
+IRM0024E: Internal error: Failed to register exception handler
+IRM0025E: Internal error: Failed to start thread
+IRM0026E: Internal error: Failed to start session
+IRM0027E: Internal error: Failed to release serial port
+IRM0028E: Internal error: Failed to set baud rate
+IRM0029E: Internal error: Failed to set line control
+IRM0030E: Internal error: Failed to flush serial port
+IRM0031E: Internal error: Failed to read data from serial port
+IRM0032E: Internal error: Failed to release serial port
+IRM0033E: Internal error: Failed to configure serial port options
+IRM0034E: Internal error: Timer failure
+

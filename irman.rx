@@ -1,0 +1,35 @@
+/* Sample Irman Rexx procedure */
+
+PARSE ARG IrData
+
+call RxFuncAdd 'SysLoadFuncs', 'REXXUTIL', 'SysLoadFuncs'
+call SysLoadFuncs
+
+lang=VALUE(LANG, , 'OS2ENVIRONMENT')
+msgfile=SUBSTR(lang, 1, POS('_', lang)-1)||'\IRM.MSG'
+
+/* CHANGES START HERE */
+
+p.1.name='Open config.sys'
+p.1.prog='e.exe'
+p.1.args='c:\config.sys'
+p.1.irdata='06a000000000'
+
+/* p.0 must equal the total number of records set up */
+p.0=1
+
+/* DO NOT EDIT ANYTHING BELOW THIS LINE */
+
+DO i=1 TO p.0
+    /* Compare *exact* match */
+    IF (p.i.irdata==IrData) THEN
+    DO
+        /* Start program in background */
+        CALL IrStartProgram p.i.prog, p.i.args
+        SAY SysGetMessage(15, msgfile, p.i.name)
+        RETURN 0
+    END
+END
+SAY SysGetMessage(14, msgfile, IrData)
+RETURN 1
+

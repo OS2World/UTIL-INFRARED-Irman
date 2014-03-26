@@ -1,0 +1,40 @@
+; Message file for IRMAND
+; This file contains all messages from the IRMAND program
+; Copyright 2002 D.J. van Enckevort
+; This program is licensed under GPL, see the file COPYING for details
+IRM
+IRM0001I: Irman Daemon %1
+IRM0002I: Copyright 2002 D.J. van Enckevort
+IRM0003I: Dit programma valt onder de GPL licentie, zie het bestand COPYING voor meer informatie
+IRM0004I: Gebruik Ctrl-C of Ctrl-Break om het programma te verlaten
+IRM0005I: Gebruik: irmand n
+IRM0006I: n=nummer van de COM poort (1-16) (OPTIONEEL)
+IRM0007I: Probeer seri‰le port %1
+IRM0008I: Geen Irman gevonden op seri‰le poort %1
+IRM0009I: Geen antwoord van de Irman
+IRM0010I: Irman gevonden op seri‰le poort %1
+IRM0011I: Seri‰le poort %1 niet aanwezig of momenteel in gebruik?
+IRM0012I: Het programma is normaal be‰indigd
+IRM0013I: Het programma is be‰indigd vanwege een fout
+IRM0014I: Niet afgehandelde actie %1
+IRM0015I: Programma %1 is gestart
+IRM0016?: 
+IRM0017?: 
+IRM0018?: 
+IRM0019?: 
+IRM0020?: 
+IRM0021I: Slechts een kopie kan gelijktijdig draaien
+IRM0022E: Interne fout: Fout tijdens het cre‰ren van een semafoor
+IRM0023E: Interne fout: Fout tijdens het registreren van de REXX functies
+IRM0024E: Interne fout: Fout tijdens het registreren van de exception handler
+IRM0025E: Interne fout: Fout tijdens het starten van de thread
+IRM0026E: Interne fout: Fout tijdens het starten van de sessie
+IRM0027E: Interne fout: Fout tijdens het vrijgeven van de seri‰le poort
+IRM0028E: Interne fout: Fout tijdens het instellen van de poort snelheid
+IRM0029E: Interne fout: Fout tijdens het instellen van de seri‰le poort controle opties
+IRM0030E: Interne fout: Fout tijdens het legen van de seri‰le poort buffers
+IRM0031E: Interne fout: Fout tijdens het lezen van gegevens vanaf de seri‰le poort
+IRM0032E: Interne fout: Fout tijdens het vrijgeven van de seri‰le poort
+IRM0033E: Interne fout: Fout tijdens het configureren van de seri‰le poort
+IRM0034E: Interne fout: Fout in de tijdklok
+
